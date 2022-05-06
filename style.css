@@ -3,44 +3,98 @@
   padding: 0;
   scroll-behavior: smooth;
 }
-
-@media screen and (max-width: 800px) {
-  body {
-    background-color: blueviolet;
-    padding: 10% 0;
-  }
-  .ext-text {
-    text-align: center;
-    margin-bottom: 5%;
-  }
-  .container {
-    background-color: white;
-    height: 100%;
-    width: 65%;
-    margin: auto;
-    border-radius: 15px;
-    padding: 7%;
-    box-sizing: border-box;
-  }
-  .navbar {
-    list-style: none;
-    margin-bottom: 5%;
-    text-align: center;
-  }
-  .navbar > li {
-    display: inline-block;
-  }
-  .navbar > li > a {
-    text-decoration: none;
-    color: black;
-  }
-  .pres-text {
-    font-size: 20px;
-  }
-  img {
-    border-radius: 50%;
-    width: 30%;
-    margin: 2% 3% 0%;
-    float: left;
-  }
+body {
+  background-color: #655fa9;
+  padding: 10% 0;
+  font-family: "Lora", serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.ext-text {
+  text-align: center;
+  margin-bottom: 5%;
+  font-weight: 700;
+}
+.ext-text > img {
+  width: 15%;
+}
+.container {
+  background-color: white;
+  height: 100%;
+  width: 65%;
+  margin: auto;
+  border-radius: 15px;
+  padding: 7%;
+  box-sizing: border-box;
+  font-family: "Helvetica", sans-serif;
+  font-weight: 400;
+  text-align: justify;
+}
+.navbar {
+  list-style: none;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.navbar > li {
+  display: inline-block;
+  margin-left: 10%;
+}
+.pres-text {
+  font-size: 20px;
+}
+.pres-text > img {
+  border-radius: 50%;
+  width: 30%;
+  margin: 2% 3% 0%;
+  float: left;
+}
+.text {
+  margin-bottom: 10%;
+  line-height: 45px;
+}
+.section {
+  margin-bottom: 10%;
+  line-height: 45px;
+}
+.skill-bar {
+  margin-bottom: 5%;
+}
+.skill {
+  display: inline-block;
+  width: 25%;
+}
+.percent {
+  display: inline-block;
+  width: 73%;
+  text-align: end;
+}
+progress {
+  accent-color: #655fa9;
+  display: block;
+  width: 100%;
+}
+.movie {
+  width: 100%;
+  margin-top: 15%;
+  border-radius: 10px;
+}
+.movie {
+  filter: grayscale(0.4);
+}
+.movie:hover {
+  filter: grayscale(0.1);
+}
+.card {
+  background-color: #655fa9;
+  height: 45%;
+  height: 115px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 10%;
+  color: white;
+}
+.card > h3 {
+  margin-top: 0%;
 }
