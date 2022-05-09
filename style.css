@@ -1,17 +1,36 @@
+:root {
+  --cor: #403a7a;
+}
 * {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
 }
 body {
-  background-color: #655fa9;
+  background-color: var(--cor);
   font-family: "Lora", serif;
   padding-top: 7%;
   padding-bottom: 10%;
+  background-image: url(./bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 a {
   text-decoration: none;
   color: black;
+}
+
+.logoimg {
+  width: 7%;
+}
+.triang {
+  background-color: #fff;
+  height: 150px;
+  width: 150px;
+  float: right;
+  margin-right: 50%;
+  transform: translateX(50%) rotate(45deg);
+  margin-top: -128px;
 }
 .ext-text {
   text-align: center;
@@ -20,10 +39,10 @@ a {
   clip-path: inset(0);
 }
 .ext-text > img {
-  width: 17%;
+  width: 10%;
   position: fixed;
-  top: 18%;
-  left: 42%;
+  top: 23%;
+  left: 45%;
 }
 .container {
   background-color: white;
@@ -44,8 +63,15 @@ a {
 }
 .navbar > li {
   display: inline-block;
-  margin-left: 10%;
+  font-size: 35px;
+  border-radius: 10%;
+  margin-right: 10%;
 }
+.navbar > li:hover {
+  border-bottom: 2px solid var(--cor);
+  box-shadow: 0 0 1em var(--cor);
+}
+
 .pres-text {
   font-size: 20px;
 }
@@ -76,7 +102,7 @@ a {
   text-align: end;
 }
 progress {
-  accent-color: #655fa9;
+  accent-color: var(--cor);
   display: block;
   width: 100%;
 }
@@ -86,20 +112,27 @@ progress {
   border-radius: 10px;
 }
 .movie {
-  filter: grayscale(0.4);
+  filter: grayscale(90%);
 }
 .movie:hover {
   filter: grayscale(0.1);
 }
 .card {
-  background-color: #655fa9;
+  background-color: var(--cor);
   height: 45%;
   height: 115px;
   border-radius: 10px;
   text-align: center;
-  padding-top: 10%;
+  padding-top: 5%;
   color: white;
 }
 .card > h3 {
   margin-top: 0%;
+}
+.up {
+  width: 10%;
+  margin-top: 15%;
+}
+.upbtn {
+  text-align: center;
 }
